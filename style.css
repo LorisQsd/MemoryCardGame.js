@@ -1,0 +1,68 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: lato, Helvetica, sans-serif;
+  background: linear-gradient(to right, #d17608, #ec3503);
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+  color: white;
+}
+
+h1 {
+  font-size: 75px;
+  text-align: center;
+  font-weight: normal;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card {
+  width: 190px;
+  height: 190px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+}
+
+.card .fruits {
+  display: none;
+}
